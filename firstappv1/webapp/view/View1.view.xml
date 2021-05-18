@@ -1,0 +1,19 @@
+<mvc:View
+    controllerName="ux.firstappv1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="First Apps">
+					<content>
+					
+					<Text text="Lets Learn UI5"></Text>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
