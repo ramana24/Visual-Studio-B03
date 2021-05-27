@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "loginpage",
+			"path": "loginpage"
+		},
+		{
+			"name": "login",
+			"path": "login"
+		}
+	],
+	"settings": {}
+}

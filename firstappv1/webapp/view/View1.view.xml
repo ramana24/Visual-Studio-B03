@@ -3,14 +3,38 @@
     xmlns:mvc="sap.ui.core.mvc"
     displayBlock="true"
     xmlns="sap.m"
+	xmlns:u="sap.ui.layout"
 >
 	<Shell id="shell">
 		<App id="app">
 			<pages>
-				<Page id="page" title="First Apps">
+				<Page id="page" title="{i18n>title}">
 					<content>
+					<!-- <u:HorizontalLayout>
 					
-					<Text text="Lets Learn UI5"></Text>
+					</u:HorizontalLayout> -->
+					<Text class="sapUiBrand" text="Lets Learn UI5 App"></Text>
+
+					<Button  text="UI5" press="onPressButton"></Button>
+
+					<Label></Label>
+
+					<Text> </Text>
+					<Link text="Personal Website"></Link>
+					<SegmentedButton selectionChange="onPressButton2">
+						<items>
+					<SegmentedButtonItem icon="sap-icon://taxi" />
+					<SegmentedButtonItem icon="sap-icon://lab" />
+					<SegmentedButtonItem icon="sap-icon://competitor" key="competitor" />
+				</items>
+					</SegmentedButton>
+
+<HBox id="CRMContent">
+<Text text="CRM field 1"></Text>
+</HBox>
+
+
+
 					</content>
 				</Page>
 			</pages>

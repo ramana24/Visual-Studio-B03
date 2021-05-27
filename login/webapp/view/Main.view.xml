@@ -1,0 +1,47 @@
+<mvc:View
+    controllerName="ux.login.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+	xmlns:c="sap.chart"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page class="titleCenter" id="page" titleAlignment="Center" title="{i18n>title}">
+					<content>
+
+					<Panel expandable="true" headerText="SignUp" width="auto" class="sapUiResponsiveMargin">
+		<content>
+			<!-- <Text text="Lorem ipsum dolor st amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat" /> -->
+	
+                    <VBox class="sapUiResponsiveMargin "> 
+                        
+						<VBox class="sapUiLargeMarginBeginEnd sapUiLargeMarginTop">
+							<HBox>
+
+							
+								<Label  text="Username" tooltip="Use your e-mail id " required="true"></Label>
+								<Input id="mail" type="Email" width="10rem" value="" submit="onEmailSelect" ></Input>
+							</HBox>
+						</VBox>
+						<VBox class="sapUiLargeMarginBeginEnd">
+							<HBox>
+								<Label  text="Password" required="true"></Label>
+								<Input id="pwd" width="10rem" type="Password" value=""></Input>
+							</HBox>
+						</VBox>
+						<HBox class="sapUiMediumMarginBegin">
+							<Button class="sapUiSizeCompact" text="Login" type="Default" press="login"></Button>
+							<Button class="sapUiSizeCompact sapUiTinyMarginBegin" text="SignUp" type="Emphasized" press="onSignupPress"></Button>
+						</HBox>
+						</VBox>
+                    
+                    	</content>
+	</Panel>
+	</content>
+	</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

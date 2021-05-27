@@ -1,11 +1,11 @@
 {
   "_version": "1.32.0",
   "sap.app": {
-    "id": "ux.firstappv1",
+    "id": "ux.login",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
-      "version": "2.1.1"
+      "version": "1.0.0"
     },
     "title": "{{appTitle}}",
     "description": "{{appDescription}}",
@@ -32,10 +32,10 @@
   "sap.ui5": {
     "flexEnabled": false,
     "rootView": {
-      "viewName": "ux.firstappv1.view.View1",
+      "viewName": "ux.login.view.Main",
       "type": "XML",
       "async": true,
-      "id": "View1"
+      "id": "Main"
     },
     "dependencies": {
       "minUI5Version": "1.66.0",
@@ -43,7 +43,6 @@
         "sap.ui.core": {},
         "sap.m": {},
         "sap.ui.layout": {}
-      
       }
     },
     "contentDensities": {
@@ -54,7 +53,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "ux.firstappv1.i18n.i18n"
+          "bundleName": "ux.login.i18n.i18n"
         }
       }
     },
@@ -70,25 +69,25 @@
         "routerClass": "sap.m.routing.Router",
         "viewType": "XML",
         "async": true,
-        "viewPath": "ux.firstappv1.view",
+        "viewPath": "ux.login.view",
         "controlAggregation": "pages",
         "controlId": "app",
         "clearControlAggregation": false
       },
       "routes": [
         {
-          "name": "RouteView1",
-          "pattern": "RouteView1",
-          "target": ["TargetView1"]
+          "name": "RouteMain",
+          "pattern": "RouteMain",
+          "target": ["TargetMain"]
         }
       ],
       "targets": {
-        "TargetView1": {
+        "TargetMain": {
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
-          "viewId": "View1",
-          "viewName": "View1"
+          "viewId": "Main",
+          "viewName": "Main"
         }
       }
     }
