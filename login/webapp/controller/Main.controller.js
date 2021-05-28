@@ -29,5 +29,18 @@ sap.ui.define([
 			onSignupPress:function(){
 				MessageToast.show("Thanks for Signing up.");
 			},
+
+			onLogin:function(){
+					var Value1 = this.getView().byId('mail').getValue(); //1
+					var Value2 = this.getView().byId('pwd').getValue(); // '1'
+
+					if(Value1 === Value2){
+						MessageBox.success("Your are logged in.");
+					}else{
+						MessageBox.warning("Entered password is incorrect");
+					}
+
+			},
+
 		});
 	});

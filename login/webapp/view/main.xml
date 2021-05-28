@@ -1,0 +1,39 @@
+<mvc:View
+    controllerName="ux.login.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+	
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+            <Page>
+            <content>
+<!-- 1 Usecase-1 App-3 screens -->
+
+	<Panel expandable="true" expanded="true" headerText="Panel with a header text" width="auto" class="sapUiResponsiveMargin">
+		<content>
+
+        <Label text="Username"></Label>
+        <Input id="mail" value=""></Input>
+
+        <Label text="Password"></Label>
+        <Input id="password" value="" maxLength="10" type="Password"></Input>
+
+        <Button text="Login" press="onLogin"></Button>
+        <Button text="Signup" press="onSignup"></Button>
+
+
+		</content>
+	</Panel>
+
+
+
+
+            </content>
+	</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
